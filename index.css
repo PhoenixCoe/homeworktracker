@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Recoleta DEMO';
+    src: url('fonts/subset-Recoleta-RegularDEMO.woff2') format('woff2'),
+        url('/fonts/subset-Recoleta-RegularDEMO.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE-Gentle';
+    src: url('/fonts/subset-MADEGentle.woff2') format('woff2'),
+        url('/fonts/subset-MADEGentle.woff') format('woff');
+        font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat-EB-Italic';
+    src: url('fonts/montserrat-extrabolditalic-webfont.woff2') format('woff2'),
+        url('/fonts/montserrat-extrabolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat-SB-Italic';
+    src: url('/fonts/montserrat-semibolditalic-webfont.woff2') format('woff2'),
+         url('/fonts/montserrat-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+    background-color: #091723;
+    overflow-y: hidden;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    scrollbar-width: none;
+    overflow: auto;
+    height: 100vh;
+    scrollbar-width: none; /* For Firefox */
+    position: relative;
+  }
+
+  body::before {
+    content: '';
+    position: absolute;
+    top: -570px; /* Position the dot at the top */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 750px; /* Size of the dot */
+    height: 750px; /* Size of the dot */
+    background-color: rgba(174, 255, 172, 0.175); /* Dot color */
+    border-radius: 100%; /* Make it circular */
+    box-shadow: 0 0 1000px rgba(174, 255, 172, 0.5); /* Blur effect around the dot */
+    filter: blur(20px); /* Additional blur effect */
+    pointer-events: none; /* Prevent interaction with the dot */
+    z-index: -1; /* Ensure the dot stays in the background */
+  }
+
+body {
+    color: white;
+    background-color: #091723;
+    font-family: Montserrat-SB-Italic;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 125px;
+    font-size: 50px;
+    font-family: MADE-Gentle;
+}
+
+h2 {
+    font-size: 35px;
+    font-family: Recoleta DEMO;
+    padding-bottom: 50px;
+}
+
+h5 {
+    padding-top: 125px;
+    color: rgba(255,255,255,0.15);
+}
+
+.highlight {
+    font-family: Montserrat-EB-Italic;
+    color: rgba(174, 255, 172, 0.15);
+}
+
+.info-table {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;;
+}
+
+table {
+    
+    font-size: 24px;
+}
+
+th {
+    font-family: MADE-Gentle;
+}
+
+table, th, td {
+    border: 1px solid rgba(255,255,255,0.15);
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 20px;
+}
