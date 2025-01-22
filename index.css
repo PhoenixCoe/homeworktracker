@@ -55,20 +55,48 @@ body {
     text-align: center;
 }
 
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale 1;
+    }
+}
+
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale 1;
+    }
+}
+
+
 h1 {
+    animation: fade-down 0.5s;
     margin-top: 125px;
     font-size: 50px;
     font-family: Recoleta DEMO;
 }
 
 h2 {
-
+    animation: fade-down 0.5s;
     font-size: 35px;
     font-family: Recoleta DEMO;
     padding-bottom: 50px;
 }
 
 h5 {
+    animation: fade-up 0.5s;
     padding-top: 125px;
     color: rgba(255,255,255,0.15);
 }
@@ -78,6 +106,7 @@ h5 {
 }
 
 .info-table {
+    animation: fade-up 0.5s;
     display: flex;
     justify-content: center;
     align-items: center;
